@@ -1,0 +1,15 @@
+Script started on 2023-06-04 21:21:26+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="182" LINES="26"]
+[0;32m@Eenrics [0m➜ [1;34m/workspaces/Helsinki_FSO_Containers [0;36m([1;31mmain[0;36m) [0m$ docker ru[K[Kconai[K[Krain[K[K[K[Ktainer run -it ubuntu
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K837dd4791cdc: Pulling fs layer [1B[1A[2K837dd4791cdc: Downloading [>                                                  ]  310.6kB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=================================>                 ]  19.71MB/29.53MB[1B[1A[2K837dd4791cdc: Verifying Checksum [1B[1A[2K837dd4791cdc: Download complete [1B[1A[2K837dd4791cdc: Extracting [>                                                  ]  327.7kB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=========>                                         ]  5.898MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=================>                                 ]  10.49MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [============================>                      ]  17.04MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=======================================>           ]  23.59MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [============================================>      ]  26.54MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=================================================> ]  29.16MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [==================================================>]  29.53MB/29.53MB[1B[1A[2K837dd4791cdc: Pull complete [1BDigest: sha256:ac58ff7fe25edc58bdf0067ca99df00014dbd032e2246d30a722fa348fd799a5
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@b9ea0e0d9968: /root@b9ea0e0d9968:/# [K]0;root@b9ea0e0d9968: /root@b9ea0e0d9968:/# mkdir usr/src/app
+[?2004l[?2004h]0;root@b9ea0e0d9968: /root@b9ea0e0d9968:/# touch usr/src/app/index.js
+[?2004l[?2004h]0;root@b9ea0e0d9968: /root@b9ea0e0d9968:/# [Kexit
+[?2004lexit
+[0;32m@Eenrics [0m➜ [1;34m/workspaces/Helsinki_FSO_Containers [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2023-06-04 21:22:29+00:00 [COMMAND_EXIT_CODE="0"]
