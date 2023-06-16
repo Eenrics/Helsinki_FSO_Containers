@@ -2,7 +2,10 @@ FROM node:16
 
 WORKDIR /usr/src/app
 
-COPY . .
-
+COPY --chown=node:node . .
 RUN npm ci --only=production
-CMD DEBUG=playground:* npm start
+
+ENV DEBUG=playground:*
+
+USER node
+CMD npm start
