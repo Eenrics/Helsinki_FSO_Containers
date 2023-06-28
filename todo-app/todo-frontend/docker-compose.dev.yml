@@ -9,3 +9,6 @@ services:
     ports:
       - 3000:3000
     container_name: front-dev # This will name the container front-dev
+  debug-helper:
+    image: busybox
+    # command: tail -f /dev/null
