@@ -3,10 +3,10 @@ node_modules/
 */node_modules/
 /**/*/node_modules/
 
-package-lock.json
-/package-lock.json
-*/package-lock.json
-/**/*/package-lock.json
+# package-lock.json
+# /package-lock.json
+# */package-lock.json
+# /**/*/package-lock.json
 
 redis_data/
 /redis_data/
