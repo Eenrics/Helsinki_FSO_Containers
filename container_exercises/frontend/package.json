@@ -1,0 +1,69 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.7.9",
+    "@emailjs/browser": "^3.10.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "cross-env": "^7.0.3",
+    "deep-freeze": "^0.0.1",
+    "dotenv": "^16.0.3",
+    "formik": "^2.2.9",
+    "graphql": "^16.6.0",
+    "graphql-ws": "^5.11.3",
+    "immer": "^9.0.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "serve": "serve -s build",
+    "test": "react-scripts test",
+    "test:all": "react-scripts test . --watchAll=false",
+    "deploy": "cross-env npm run build && rm ../server/build/ -rf && cp build/ ../server/ -rp",
+    "config": "cross-env npm run _serv_id && npm run _temp_id && npm run _api_key && npm run _status && npm run _gql_url && npm run _ws_url",
+    "_serv_id": "cross-env sed -i s/\\(PUT_SERVICE_ID\\)/$EMAIL_SERVICE_ID/ ./src/utils/config.js",
+    "_temp_id": "cross-env sed -i s/\\(PUT_TEMPLATE_ID\\)/$EMAIL_TEMPLATE_ID/ ./src/utils/config.js",
+    "_api_key": "cross-env sed -i s/\\(PUT_PUBLIC_API_KEY\\)/$PUBLIC_API_KEY/ ./src/utils/config.js",
+    "_status": "cross-env sed -i s/\\(PUT_STATUS\\)/$BE_STATUS/ ./src/utils/config.js",
+    "_gql_url": "cross-env sed -i s/\\(PUT_ONL_GQL_URL\\)/$BACKEND_URL_ONL/ ./src/utils/config.js",
+    "_ws_url": "cross-env sed -i s/\\(PUT_ONL_WS_URL\\)/$WS_URL_ONL/ ./src/utils/config.js",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}
