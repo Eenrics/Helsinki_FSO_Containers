@@ -21,7 +21,8 @@ FROM base as build-stage
 RUN npm ci
 
 COPY . .
-ENV REACT_APP_BACKEND_URL='http://localhost:3331'
+# ENV REACT_APP_BACKEND_URL='http://localhost:3331'
+ENV REACT_APP_BACKEND_URL='/api'
 
 RUN npm run build
 
