@@ -6,6 +6,7 @@ COPY . .
 
 # Change npm ci to npm install since we are going to be in development mode
 RUN npm install
+RUN npm install -g nodemon
 
 # ENV MONGO_URL='mongodb://the_username:the_password@localhost:3456/the_database'
 # ENV REDIS_URL='redis://localhost:7890'
