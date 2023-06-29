@@ -49,7 +49,8 @@ services:
     ports:
       - 3000:3000
     environment:
-      REACT_APP_BACKEND_URL: 'http://api:3331'
+      # REACT_APP_BACKEND_URL: 'http://api:3331'
+      REACT_APP_BACKEND_URL: 'http://localhost:3331'
     container_name: front-dev
   nginx:
     image: nginx:1.20.1
